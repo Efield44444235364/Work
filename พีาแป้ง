@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แนะนำตัวต้าจ้า</title>
+  <p>แนะนำเปลี่ยนเป็นโหมด มืด นะคะ เพราะสวยกว่า!!</p>
+  <style>
+    body {
+      background-color: #FFD7E8;
+      font-family: 'Segoe UI', sans-serif;
+      color: #5C1A35;
+      padding: 30px;
+    }
+
+    .container {
+      background-color: #FFCADD;
+      border: 2px solid #F0AFC9;
+      border-radius: 20px;
+      max-width: 650px;
+      margin: auto;
+      padding: 25px 30px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #B01E57;
+      margin-bottom: 10px;
+    }
+
+    #loading-text {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #A0184A;
+    }
+
+    .profile-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 15px auto;
+      border: 5px solid #F0AFC9;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 1;
+    }
+
+    .profile-img img.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .profile-img button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: none;
+      font-size: 24px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 3;
+      transition: background-color 0.3s;
+    }
+
+    .profile-img button:hover {
+      background-color: rgba(255, 200, 220, 0.6);
+    }
+
+    .profile-img .prev {
+      left: 10px;
+    }
+
+    .profile-img .next {
+      right: 10px;
+    }
+
+    .info {
+      text-align: left;
+      line-height: 1.8;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .info span {
+      font-weight: bold;
+      color: #A0184A;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ แนะนำตัวต้าจ้า ✨</h1>
+    
+    <div id="loading-text">📸 กำลังโหลดรูปภาพ รอสักครู่นะคะ...</div>
+
+    <div class="profile-img">
+      <img src="https://raw.githubusercontent.com/Efield44444235364/Work/refs/heads/main/MEITU_20250610_094110377(1).jpg" class="active" alt="รูปของน้องต้า">
+      <img src="https://raw.githubusercontent.com/Efield44444235364/Work/refs/heads/main/20250610_092659(1).jpg" alt="รูปอีกอันของน้องต้า">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
+    <div class="info">
+      <p><span>ชื่อจริง Real name:</span> ชีฏาภัทร ศรครุฑ</p>
+      <p><span>ชื่อเล่น:</span> ต้า</p>
+      <p><span>อายุ ปรุป๋า:</span> 15</p>
+      <p><span>เพศ:</span> หญิงแท้น่ารักคึกคักจังเลย</p>
+      <p><span>ส่วนสูง:</span> 162 ซม.</p>
+      <p><span>ชั้นเลขที่:</span> ม.3/8 เลขที่ 10</p>
+      <p><span>เรียนที่:</span> โรงเรียนศรีราชา</p>
+      <p><span>ที่อยู่และจังหวัดที่เกิด:</span> ชลบุรี</p>
+      <p><span>ฐานะ:</span> ข้อนข้างรวย</p>
+      <p><span>ความสวย:</span> ข้อนข้างน่ารัก หรอยจังวุ้</p>
+      <p><span>สัตว์ที่ชอบ:</span> ชอบแมวน่ารัก, หมา</p>
+      <p><span>สัตว์ที่เกียด:</span> จิ้งจก</p>
+      <p><span>ศิลปินที่ชอบ:</span> Ilslick, kanye, อบทองคำเพ็ง, นายอน, ยังโอม, AOA, Wonder Girl, NewJeans</p>
+      <p><span>เพลงที่ชอบจ้า:</span> Gonna get your heart - AOA</p>
+      <p><span>อาหาร:</span> ชอบกินแซลมอนจร้า ยำๆแซลมอนยำๆช้างน้อย</p>
+      <p><span>ขนมที่ชอบ:</span> โดริโต้สจร้า</p>
+      <p><span>ผลไม้โปรดจ้า:</span> มังคุด</p>
+      <p><span>นิสัย:</span> น่ารัก และเก่ง</p>
+      <p><span>นิสัยไม่ดี:</span> แอบ Me เล็กน้อย</p>
+      <p><span>มองตัวเองเป็นคนยังไง:</span> น่ารัก</p>
+      <p><span>มองคนอื่นละห์:</span> น่ารักนิดหน่อยค่า</p>
+      <p><span>คนที่ไม่ชอบค่ะ:</span> แพคเเควน and armstrong</p>
+      <p><span>ระดับการศึกษา:</span> ม.3</p>
+<p><span>ก่อนเข้าสู่วงการ:</span> เรียน</p>
+<p><span>ปัจจุบัน:</span> เรียน</p>
+<p><span>อาชีพที่อยากเป็น:</span> อยากเป็นเชฟ</p>
+<p><span>อยากเป็นอะไรบ้าง:</span> หมอ เป็นเชฟ เป็นครู เป็นทุกอย่าง</p>
+<p><span>ชอบฤดู:</span> หิมะ</p>
+<p><span>โรคที่เป็น:</span> โรคกระเพาะ</p>
+    </div>
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.profile-img img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const loadingText = document.getElementById('loading-text');
+    let index = 0;
+    let timer;
+    let loadedCount = 0;
+
+    function showImage(i) {
+      images[index].classList.remove('active');
+      index = (i + images.length) % images.length;
+      images[index].classList.add('active');
+    }
+
+    function nextImage() {
+      showImage(index + 1);
+    }
+
+    function prevImage() {
+      showImage(index - 1);
+    }
+
+    function startAutoSlide() {
+      timer = setInterval(nextImage, 4000);
+    }
+
+    function resetAutoSlide() {
+      clearInterval(timer);
+      startAutoSlide();
+    }
+
+    // ตรวจจับเมื่อโหลดรูปเสร็จ
+    images.forEach((img) => {
+      img.addEventListener('load', () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          loadingText.style.display = 'none';
+        }
+      });
+
+      img.addEventListener('error', () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          loadingText.textContent = '❌ โหลดรูปบางภาพไม่สำเร็จค่ะ แต่ไม่เป็นไรน้า';
+        }
+      });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextImage();
+      resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevImage();
+      resetAutoSlide();
+    });
+
+    startAutoSlide();
+  </script>
+</body>
+</html>
